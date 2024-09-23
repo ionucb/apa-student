@@ -4,7 +4,7 @@
 
 ## Table of Contents
 - [Overview](#overview)
-- [Lab 1]()
+- [Lab 1](#lab-1)
 ...
 
 # Overview
