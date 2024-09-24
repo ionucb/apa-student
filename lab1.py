@@ -39,12 +39,51 @@ def fib3(n):
     return j
 
 def main():
-    fib1(1)
-    print("recursiva:",count_rec)
-    fib2(5)
-    print("iterativa:",count_it)
-    fib3(5)
-    print("multiplicarea de matrici:",count_mat)
+    global count_rec
+    global count_it
+    global count_mat
+    ans=True
+    while ans:
+        print ("""
+        1. fibonacci 10
+        2. fibonacci 100
+        3. fibonacci 1000
+        4. fibonacci 10000
+        5.Exit
+        """)
+        ans=input("What would you like to do? ") 
+        if ans=="1": 
+            fib1(10)
+            fib2(10)
+            fib3(10)
+            print("recursiv:",count_rec)
+            print("iterativ:",count_it)
+            print("matrici:",count_mat)
+        elif ans=="2":
+            fib1(100)
+            fib2(100)
+            fib3(100)
+            print("recursiv:",count_rec)
+            print("iterativ:",count_it)
+            print("matrici:",count_mat)
+        elif ans=="3":
+            fib1(1000)
+            fib2(1000)
+            fib3(1000)
+            print("recursiv:",count_rec)
+            print("iterativ:",count_it)
+            print("matrici:",count_mat)
+        elif ans=="4":
+            fib1(10000)
+            fib2(10000)
+            fib3(10000)
+            print("recursiv:",count_rec)
+            print("iterativ:",count_it)
+            print("matrici:",count_mat)
+        elif ans=="5":
+            print("\n Goodbye") 
+        elif ans !="":
+            print("\n Not Valid Choice Try again") 
 
 if __name__ == "__main__":
     main()
